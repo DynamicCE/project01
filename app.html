@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <script src="index.js"></script>
+  <body>
+    <header>
+      <img
+        src="logo.png"
+        alt=""
+        height="68"
+        width="68"
+        alt="Today I Learned Logo"
+      />
+      <h1>Today I Learned</h1>
+    </header>
+
+    <form action="">
+      <input
+        style="width: 15rem"
+        type="text"
+        placeholder="Choose a fact with the world..."
+      />
+      <span>200</span>
+      <input type="text" placeholder="Trustworthy Source" />
+      <select name="select" id="select">
+        <option value="">Choose The Category</option>
+        <option value="Technology">Technology</option>
+        <option value="Science">Science</option>
+        <option value="Finance">Finance</option>
+        <option value="Society">Society</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Health">Health</option>
+        <option value="History">History</option>
+        <option value="News">News</option>
+      </select>
+      <button>Post</button>
+    </form>
+    <!-- Main container -->
+    <div id="main-container">
+      <!-- Left panel for categories -->
+      <div id="left-panel">
+        <!-- Category buttons -->
+        <button class="category-button" style="background-color: #ffffff">
+          ALL
+        </button>
+        <button class="category-button" style="background-color: #3b82f6">
+          Technology
+        </button>
+        <button class="category-button" style="background-color: #16a34a">
+          Science
+        </button>
+        <button class="category-button" style="background-color: #ef4444">
+          Finance
+        </button>
+        <button class="category-button" style="background-color: #eab308">
+          Society
+        </button>
+        <button class="category-button" style="background-color: #db2777">
+          Entertainment
+        </button>
+        <button class="category-button" style="background-color: #14b8a6">
+          Health
+        </button>
+        <button class="category-button" style="background-color: #f97316">
+          History
+        </button>
+        <button class="category-button" style="background-color: #8b5cf6">
+          News
+        </button>
+      </div>
+
+      <!-- Middle panel for category information -->
+      <div id="middle-panel">
+        <!-- Placeholder for initial facts -->
+        <div class="facts-container">
+          <!-- Fact 1 -->
+
+          <div class="fact-card" data-category="technology">
+            <p>React is being developed by Meta (formerly facebook)</p>
+            <a href="https://opensource.fb.com/">Source</a>
+            <div class="votes">
+              <button class="vote-button" data-vote-type="interesting">
+                <span>👍 </span><span class="vote-count">24</span>
+              </button>
+              <button class="vote-button" data-vote-type="mindblowing">
+                <span>🤯 </span><span class="vote-count">9</span>
+              </button>
+              <button class="vote-button" data-vote-type="false">
+                <span>⛔ </span><span class="vote-count">4</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="fact-card" data-category="society">
+            <p>
+              Millennial dads spend 3 times as much time with their kids than
+              their fathers spent with them. In 1982, 43% of fathers had never
+              changed a diaper. Today, that number is down to 3%
+            </p>
+            <a
+              href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+              >Source</a
+            >
+            <div class="votes">
+              <button class="vote-button" data-vote-type="interesting">
+                <span>👍 </span><span class="vote-count">11</span>
+              </button>
+              <button class="vote-button" data-vote-type="mindblowing">
+                <span>🤯 </span><span class="vote-count">2</span>
+              </button>
+              <button class="vote-button" data-vote-type="false">
+                <span>⛔ </span><span class="vote-count">0</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="fact-card" data-category="society">
+            <p>Lisbon is the capital of Portugal</p>
+            <a href="https://en.wikipedia.org/wiki/Lisbon">Source</a>
+            <div class="votes">
+              <button class="vote-button" data-vote-type="interesting">
+                <span>👍 </span><span class="vote-count">8</span>
+              </button>
+              <button class="vote-button" data-vote-type="mindblowing">
+                <span>🤯 </span><span class="vote-count">3</span>
+              </button>
+              <button class="vote-button" data-vote-type="false">
+                <span>⛔ </span><span class="vote-count">1</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Share button -->
+      <button id="share-button">Share</button>
+    </div>
+  </body>
+</html>
