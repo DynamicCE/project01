@@ -24,7 +24,7 @@
         type="text"
         placeholder="Choose a fact with the world..."
       />
-      <span>200</span>
+      <span class="character-limit">200</span>
       <input type="text" placeholder="Trustworthy Source" />
       <select name="select" id="select">
         <option value="">Choose The Category</option>
@@ -39,42 +39,41 @@
       </select>
       <button>Post</button>
     </form>
+
     <!-- Main container -->
     <div id="main-container">
       <!-- Left panel for categories -->
       <div id="left-panel">
         <!-- Category buttons -->
-        <!-- ... (your other HTML code) ... -->
+        <!-- ... -->
       </div>
 
       <!-- Middle panel for category information -->
       <div id="middle-panel">
         <!-- Placeholder for initial facts -->
         <ul class="facts-container">
-          <!-- Changed this div to ul -->
           <!-- Fact 1 -->
           <li class="fact-card" data-category="technology">
-            <!-- Changed this div to li -->
             <p>React is being developed by Meta (formerly facebook)</p>
             <a href="https://opensource.fb.com/">Source</a>
             <span>#technology#</span>
             <div class="votes">
               <button class="vote-button" data-vote-type="interesting">
-                <span>👍 </span><strong>11</strong>
+                <span>👍 </span><strong>24</strong>
               </button>
               <button class="vote-button" data-vote-type="mindblowing">
-                <span>🤯 </span><strong>6</strong>
+                <span>🤯 </span><strong>9</strong>
               </button>
               <button class="vote-button" data-vote-type="false">
-                <span>⛔ </span><strong>3</strong>
+                <span>⛔ </span><strong>4</strong>
               </button>
             </div>
           </li>
-          <li>
+          <!-- Fact 2 -->
+          <li class="fact-card" data-category="society">
             <p>
               Millennial dads spend 3 times as much time with their kids than
-              their fathers spent with them. In 1982, 43% of fathers had never
-              changed a diaper. Today, that number is down to 3%
+              their fathers spent with them.
             </p>
             <a
               href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
@@ -93,7 +92,8 @@
               </button>
             </div>
           </li>
-          <li>
+          <!-- Fact 3 -->
+          <li class="fact-card" data-category="society">
             <p>Lisbon is the capital of Portugal</p>
             <a href="https://en.wikipedia.org/wiki/Lisbon">Source</a>
             <span>#society#</span>
@@ -109,11 +109,7 @@
               </button>
             </div>
           </li>
-          <!-- End of list item -->
-
-          <!-- ... (your other fact-cards, also changed to li) ... -->
         </ul>
-        <!-- End of list -->
       </div>
     </div>
   </body>

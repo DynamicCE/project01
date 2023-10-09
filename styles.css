@@ -1,0 +1,99 @@
+/* Genel Ayarlar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header Stilleri */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+/* Form Stilleri */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+}
+
+input[type="text"],
+select,
+button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Karakter Limiti İçin Stil */
+.character-limit {
+  display: inline-block;
+  vertical-align: middle; /* Dikeyde ortala */
+  margin: 0 0.5rem; /* Sol ve sağdan biraz boşluk ekleyin */
+}
+
+/* Main Container */
+#main-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Left Panel */
+#left-panel {
+  flex: 1;
+  background-color: #333;
+  color: white;
+}
+
+/* Middle Panel */
+#middle-panel {
+  flex: 3;
+  padding: 1rem;
+}
+
+.facts-container {
+  list-style: none;
+}
+
+.fact-card {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.vote-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* ... */
+/* Form Stilleri */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Dikeyde ortala */
+  margin: 1rem;
+}
+/* ... */
+.character-limit {
+  margin: 0 0.5rem; /* Sol ve sağdan biraz boşluk ekleyin */
+}
+/* ... */
