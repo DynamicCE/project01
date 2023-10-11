@@ -5,17 +5,21 @@
     <title>App Design</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
   <body>
     <header>
-      <img
-        src="logo.png"
-        alt=""
-        height="68"
-        width="68"
-        alt="Today I Learned Logo"
-      />
-      <h1>Today I Learned</h1>
+      <!-- Logo ve başlık için bir div oluşturuyoruz -->
+      <div id="logo-and-title">
+        <img
+          src="logo.png"
+          alt=""
+          height="68"
+          width="68"
+          alt="Today I Learned Logo"
+        />
+        <h1>Today I Learned</h1>
+      </div>
+      <button id="share">SHARE A FACT</button>
     </header>
 
     <form action="">
@@ -44,6 +48,14 @@
     <div id="main-container">
       <!-- Left panel for categories -->
       <div id="left-panel">
+        <button>Technology</button>
+        <button>Science</button>
+        <button>Finance</button>
+        <button>Society</button>
+        <button>Entertainment</button>
+        <button>Health</button>
+        <button>History</button>
+        <button>News</button>
         <!-- Category buttons -->
         <!-- ... -->
       </div>
