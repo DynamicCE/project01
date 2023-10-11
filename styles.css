@@ -65,7 +65,9 @@ form {
 #left-panel button:hover {
   background-color: #555;
 }
-
+.hidden {
+  display: none !important;
+}
 /* Orta panel için stil */
 #middle-panel {
   width: 80%;
