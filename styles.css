@@ -83,3 +83,8 @@ form {
 .vote-button {
   margin-right: 1rem;
 }
+
+#share {
+  margin-top: 0.5rem; /* 2rem üst boşluk ekliyoruz */
+  margin-left: 1rem;
+}
